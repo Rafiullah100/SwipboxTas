@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52250DAF2B05E3A40067F84A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52250DAE2B05E3A30067F84A /* DetailViewController.swift */; };
+		52250DB22B05EC420067F84A /* MovieDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52250DB12B05EC420067F84A /* MovieDetailModel.swift */; };
+		52250DB62B05ECB90067F84A /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52250DB52B05ECB90067F84A /* MovieDetailViewModel.swift */; };
+		5299A88C2B04A31500F49FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A88B2B04A31500F49FFA /* AppDelegate.swift */; };
+		5299A88E2B04A31500F49FFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A88D2B04A31500F49FFA /* SceneDelegate.swift */; };
+		5299A8932B04A31500F49FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5299A8912B04A31500F49FFA /* Main.storyboard */; };
+		5299A8962B04A31500F49FFA /* SwipBox_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8942B04A31500F49FFA /* SwipBox_Task.xcdatamodeld */; };
+		5299A8982B04A31B00F49FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5299A8972B04A31B00F49FFA /* Assets.xcassets */; };
+		5299A89B2B04A31B00F49FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5299A8992B04A31B00F49FFA /* LaunchScreen.storyboard */; };
+		5299A8AA2B04A36900F49FFA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8A42B04A36900F49FFA /* AppError.swift */; };
+		5299A8AB2B04A36900F49FFA /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8A52B04A36900F49FFA /* URLSession+Extension.swift */; };
+		5299A8AD2B04A36900F49FFA /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8A72B04A36900F49FFA /* Method.swift */; };
+		5299A8AE2B04A36900F49FFA /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8A82B04A36900F49FFA /* ApiResponse.swift */; };
+		5299A8AF2B04A36900F49FFA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8A92B04A36900F49FFA /* Route.swift */; };
+		5299A8B82B04AB2700F49FFA /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8B72B04AB2700F49FFA /* MovieListViewController.swift */; };
+		5299A8BB2B04AB4700F49FFA /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8B92B04AB4700F49FFA /* MovieListTableViewCell.swift */; };
+		5299A8BC2B04AB4700F49FFA /* MovieListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5299A8BA2B04AB4700F49FFA /* MovieListTableViewCell.xib */; };
+		5299A8BE2B04ACD400F49FFA /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8BD2B04ACD400F49FFA /* MovieModel.swift */; };
+		5299A8C12B04AD7900F49FFA /* IBDesignableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8C02B04AD7900F49FFA /* IBDesignableExtensions.swift */; };
+		5299A8C32B04AE4900F49FFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8C22B04AE4900F49FFA /* Constants.swift */; };
+		5299A8C52B04AEC300F49FFA /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8C42B04AEC300F49FFA /* MovieListViewModel.swift */; };
+		5299A8C72B04B4A200F49FFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299A8C62B04B4A200F49FFA /* Extensions.swift */; };
+		73AE06708BE7AA8321F127CD /* Pods_SwipBox_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49141DFBF7C03B0C870DD15E /* Pods_SwipBox_Task.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49141DFBF7C03B0C870DD15E /* Pods_SwipBox_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipBox_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52250DAE2B05E3A30067F84A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		52250DB12B05EC420067F84A /* MovieDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailModel.swift; sourceTree = "<group>"; };
+		52250DB52B05ECB90067F84A /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		5299A8882B04A31500F49FFA /* SwipBox Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwipBox Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5299A88B2B04A31500F49FFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5299A88D2B04A31500F49FFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5299A8922B04A31500F49FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5299A8952B04A31500F49FFA /* SwipBox_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwipBox_Task.xcdatamodel; sourceTree = "<group>"; };
+		5299A8972B04A31B00F49FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5299A89A2B04A31B00F49FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5299A89C2B04A31B00F49FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5299A8A42B04A36900F49FFA /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		5299A8A52B04A36900F49FFA /* URLSession+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		5299A8A72B04A36900F49FFA /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		5299A8A82B04A36900F49FFA /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		5299A8A92B04A36900F49FFA /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		5299A8B72B04AB2700F49FFA /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		5299A8B92B04AB4700F49FFA /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
+		5299A8BA2B04AB4700F49FFA /* MovieListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListTableViewCell.xib; sourceTree = "<group>"; };
+		5299A8BD2B04ACD400F49FFA /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		5299A8C02B04AD7900F49FFA /* IBDesignableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignableExtensions.swift; sourceTree = "<group>"; };
+		5299A8C22B04AE4900F49FFA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5299A8C42B04AEC300F49FFA /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		5299A8C62B04B4A200F49FFA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		87705DF99C122FF60C4CE1A8 /* Pods-SwipBox Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipBox Task.release.xcconfig"; path = "Target Support Files/Pods-SwipBox Task/Pods-SwipBox Task.release.xcconfig"; sourceTree = "<group>"; };
+		BC5C14E2B6F0DAE675C4B070 /* Pods-SwipBox Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipBox Task.debug.xcconfig"; path = "Target Support Files/Pods-SwipBox Task/Pods-SwipBox Task.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5299A8852B04A31500F49FFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73AE06708BE7AA8321F127CD /* Pods_SwipBox_Task.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52250DB02B05EC290067F84A /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				52250DAE2B05E3A30067F84A /* DetailViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		52250DB32B05EC480067F84A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52250DB12B05EC420067F84A /* MovieDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52250DB42B05ECA20067F84A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				52250DB52B05ECB90067F84A /* MovieDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5299A87F2B04A31500F49FFA = {
+			isa = PBXGroup;
+			children = (
+				5299A88A2B04A31500F49FFA /* SwipBox Task */,
+				5299A8892B04A31500F49FFA /* Products */,
+				8A3B84A14062832E0750A566 /* Pods */,
+				C8B492A88CCC33F490143BB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5299A8892B04A31500F49FFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8882B04A31500F49FFA /* SwipBox Task.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5299A88A2B04A31500F49FFA /* SwipBox Task */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8BF2B04AD5E00F49FFA /* Utilities */,
+				5299A8A22B04A33500F49FFA /* AppDelegate */,
+				5299A8A32B04A36900F49FFA /* Networking */,
+				5299A8B02B04A96500F49FFA /* Modules */,
+				5299A8912B04A31500F49FFA /* Main.storyboard */,
+				5299A8972B04A31B00F49FFA /* Assets.xcassets */,
+				5299A8992B04A31B00F49FFA /* LaunchScreen.storyboard */,
+				5299A89C2B04A31B00F49FFA /* Info.plist */,
+				5299A8942B04A31500F49FFA /* SwipBox_Task.xcdatamodeld */,
+			);
+			path = "SwipBox Task";
+			sourceTree = "<group>";
+		};
+		5299A8A22B04A33500F49FFA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5299A88B2B04A31500F49FFA /* AppDelegate.swift */,
+				5299A88D2B04A31500F49FFA /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5299A8A32B04A36900F49FFA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8A42B04A36900F49FFA /* AppError.swift */,
+				5299A8A52B04A36900F49FFA /* URLSession+Extension.swift */,
+				5299A8A72B04A36900F49FFA /* Method.swift */,
+				5299A8A82B04A36900F49FFA /* ApiResponse.swift */,
+				5299A8A92B04A36900F49FFA /* Route.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5299A8B02B04A96500F49FFA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8B12B04A96F00F49FFA /* MovieListModule */,
+				5299A8C82B04D32A00F49FFA /* MovieDetailModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5299A8B12B04A96F00F49FFA /* MovieListModule */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8B22B04A99900F49FFA /* Model */,
+				5299A8B32B04A9A000F49FFA /* View */,
+				5299A8B42B04A9BD00F49FFA /* ViewModel */,
+			);
+			path = MovieListModule;
+			sourceTree = "<group>";
+		};
+		5299A8B22B04A99900F49FFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8BD2B04ACD400F49FFA /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5299A8B32B04A9A000F49FFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8B62B04A9F600F49FFA /* Cell */,
+				5299A8B52B04A9E700F49FFA /* Viewcontroller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5299A8B42B04A9BD00F49FFA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8C42B04AEC300F49FFA /* MovieListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5299A8B52B04A9E700F49FFA /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8B72B04AB2700F49FFA /* MovieListViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		5299A8B62B04A9F600F49FFA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8B92B04AB4700F49FFA /* MovieListTableViewCell.swift */,
+				5299A8BA2B04AB4700F49FFA /* MovieListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5299A8BF2B04AD5E00F49FFA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5299A8C02B04AD7900F49FFA /* IBDesignableExtensions.swift */,
+				5299A8C22B04AE4900F49FFA /* Constants.swift */,
+				5299A8C62B04B4A200F49FFA /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5299A8C82B04D32A00F49FFA /* MovieDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				52250DB32B05EC480067F84A /* Model */,
+				52250DB02B05EC290067F84A /* Viewcontroller */,
+				52250DB42B05ECA20067F84A /* ViewModel */,
+			);
+			path = MovieDetailModule;
+			sourceTree = "<group>";
+		};
+		8A3B84A14062832E0750A566 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC5C14E2B6F0DAE675C4B070 /* Pods-SwipBox Task.debug.xcconfig */,
+				87705DF99C122FF60C4CE1A8 /* Pods-SwipBox Task.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8B492A88CCC33F490143BB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49141DFBF7C03B0C870DD15E /* Pods_SwipBox_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5299A8872B04A31500F49FFA /* SwipBox Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5299A89F2B04A31B00F49FFA /* Build configuration list for PBXNativeTarget "SwipBox Task" */;
+			buildPhases = (
+				9F3C079749E7BA84E60E302B /* [CP] Check Pods Manifest.lock */,
+				5299A8842B04A31500F49FFA /* Sources */,
+				5299A8852B04A31500F49FFA /* Frameworks */,
+				5299A8862B04A31500F49FFA /* Resources */,
+				863DA2131EDD73521F7CEA90 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwipBox Task";
+			productName = "SwipBox Task";
+			productReference = 5299A8882B04A31500F49FFA /* SwipBox Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5299A8802B04A31500F49FFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5299A8872B04A31500F49FFA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 5299A8832B04A31500F49FFA /* Build configuration list for PBXProject "SwipBox Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5299A87F2B04A31500F49FFA;
+			productRefGroup = 5299A8892B04A31500F49FFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5299A8872B04A31500F49FFA /* SwipBox Task */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5299A8862B04A31500F49FFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5299A89B2B04A31B00F49FFA /* LaunchScreen.storyboard in Resources */,
+				5299A8982B04A31B00F49FFA /* Assets.xcassets in Resources */,
+				5299A8BC2B04AB4700F49FFA /* MovieListTableViewCell.xib in Resources */,
+				5299A8932B04A31500F49FFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		863DA2131EDD73521F7CEA90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwipBox Task/Pods-SwipBox Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwipBox Task/Pods-SwipBox Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwipBox Task/Pods-SwipBox Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F3C079749E7BA84E60E302B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwipBox Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5299A8842B04A31500F49FFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5299A8BE2B04ACD400F49FFA /* MovieModel.swift in Sources */,
+				5299A8AF2B04A36900F49FFA /* Route.swift in Sources */,
+				5299A8AA2B04A36900F49FFA /* AppError.swift in Sources */,
+				5299A8C52B04AEC300F49FFA /* MovieListViewModel.swift in Sources */,
+				5299A8AB2B04A36900F49FFA /* URLSession+Extension.swift in Sources */,
+				5299A8C12B04AD7900F49FFA /* IBDesignableExtensions.swift in Sources */,
+				5299A88C2B04A31500F49FFA /* AppDelegate.swift in Sources */,
+				52250DAF2B05E3A40067F84A /* DetailViewController.swift in Sources */,
+				52250DB62B05ECB90067F84A /* MovieDetailViewModel.swift in Sources */,
+				5299A88E2B04A31500F49FFA /* SceneDelegate.swift in Sources */,
+				5299A8C32B04AE4900F49FFA /* Constants.swift in Sources */,
+				5299A8AE2B04A36900F49FFA /* ApiResponse.swift in Sources */,
+				52250DB22B05EC420067F84A /* MovieDetailModel.swift in Sources */,
+				5299A8C72B04B4A200F49FFA /* Extensions.swift in Sources */,
+				5299A8B82B04AB2700F49FFA /* MovieListViewController.swift in Sources */,
+				5299A8AD2B04A36900F49FFA /* Method.swift in Sources */,
+				5299A8BB2B04AB4700F49FFA /* MovieListTableViewCell.swift in Sources */,
+				5299A8962B04A31500F49FFA /* SwipBox_Task.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5299A8912B04A31500F49FFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5299A8922B04A31500F49FFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5299A8992B04A31B00F49FFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5299A89A2B04A31B00F49FFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5299A89D2B04A31B00F49FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5299A89E2B04A31B00F49FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5299A8A02B04A31B00F49FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC5C14E2B6F0DAE675C4B070 /* Pods-SwipBox Task.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9K786374U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwipBox Task/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sk.SwipBox-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5299A8A12B04A31B00F49FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87705DF99C122FF60C4CE1A8 /* Pods-SwipBox Task.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9K786374U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwipBox Task/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sk.SwipBox-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5299A8832B04A31500F49FFA /* Build configuration list for PBXProject "SwipBox Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5299A89D2B04A31B00F49FFA /* Debug */,
+				5299A89E2B04A31B00F49FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5299A89F2B04A31B00F49FFA /* Build configuration list for PBXNativeTarget "SwipBox Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5299A8A02B04A31B00F49FFA /* Debug */,
+				5299A8A12B04A31B00F49FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5299A8942B04A31500F49FFA /* SwipBox_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5299A8952B04A31500F49FFA /* SwipBox_Task.xcdatamodel */,
+			);
+			currentVersion = 5299A8952B04A31500F49FFA /* SwipBox_Task.xcdatamodel */;
+			path = SwipBox_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5299A8802B04A31500F49FFA /* Project object */;
+}

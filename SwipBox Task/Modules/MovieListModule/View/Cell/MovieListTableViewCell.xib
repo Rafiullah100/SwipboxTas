@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="173" id="KGk-i7-Jjw" customClass="MovieListTableViewCell" customModule="SwipBox_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkO-sV-K3g">
+                        <rect key="frame" x="0.0" y="0.0" width="378" height="153"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FeZ-7G-9qj">
+                                <rect key="frame" x="0.0" y="0.0" width="378" height="153"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Avenger" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwn-49-trb">
+                                <rect key="frame" x="20" y="121.66666666666667" width="258" height="21.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="20.329999999999998" id="hIR-26-WBf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FeZ-7G-9qj" secondAttribute="trailing" id="43r-cP-MOH"/>
+                            <constraint firstAttribute="bottom" secondItem="qwn-49-trb" secondAttribute="bottom" constant="10" id="8uf-bE-ddt"/>
+                            <constraint firstAttribute="bottom" secondItem="FeZ-7G-9qj" secondAttribute="bottom" id="KtQ-wJ-hRN"/>
+                            <constraint firstAttribute="trailing" secondItem="qwn-49-trb" secondAttribute="trailing" constant="100" id="cwY-CX-0MZ"/>
+                            <constraint firstItem="FeZ-7G-9qj" firstAttribute="leading" secondItem="dkO-sV-K3g" secondAttribute="leading" id="gzM-91-ICl"/>
+                            <constraint firstItem="FeZ-7G-9qj" firstAttribute="top" secondItem="dkO-sV-K3g" secondAttribute="top" id="tLV-vm-S0Q"/>
+                            <constraint firstItem="qwn-49-trb" firstAttribute="leading" secondItem="dkO-sV-K3g" secondAttribute="leading" constant="20" id="thf-wL-igf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="dkO-sV-K3g" secondAttribute="bottom" constant="20" id="6Ad-yE-g9O"/>
+                    <constraint firstItem="dkO-sV-K3g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R2P-w8-u4O"/>
+                    <constraint firstAttribute="trailing" secondItem="dkO-sV-K3g" secondAttribute="trailing" id="qhk-g5-hgm"/>
+                    <constraint firstItem="dkO-sV-K3g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wBk-5v-nnE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieNameLabel" destination="qwn-49-trb" id="vGg-Uj-wHD"/>
+                <outlet property="thumbnailImageView" destination="FeZ-7G-9qj" id="Blm-hP-x1T"/>
+            </connections>
+            <point key="canvasLocation" x="3.0534351145038165" y="65.140845070422543"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
